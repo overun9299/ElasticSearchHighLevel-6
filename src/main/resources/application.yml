@@ -1,0 +1,4 @@
+server:
+  port: 9378
+  servlet:
+    context-path: /es
