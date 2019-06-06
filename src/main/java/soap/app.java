@@ -6,10 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @ClassName: app
  * @Description:
- * @author: 薏米滴答-西安-zhangPY
+ * @author: zhangPY
  * @version: V1.0
  * @date: 2019/4/18 9:52
  * @Copyright: 2019 www.yimidida.com Inc. All rights reserved.
+ * https://www.cnblogs.com/xiaocandou/p/8127371.html
  */
 
 @SpringBootApplication

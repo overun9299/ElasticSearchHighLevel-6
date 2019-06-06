@@ -6,7 +6,6 @@ import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.index.query.BoolQueryBuilder;
-import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
@@ -36,13 +35,13 @@ public class testController {
 
     @RequestMapping(value = "find")
     public void find() throws Exception{
-        String INDEX_TEST = "booklist";
+        String INDEX_TEST = "addresspro";
 
         String TYPE_TEST = "doc";
 
         BoolQueryBuilder boolBuilder = QueryBuilders.boolQuery();
 
-        boolBuilder.filter(QueryBuilders.matchQuery("content","深圳东路"));
+        boolBuilder.filter(QueryBuilders.matchQuery("content","中心街道"));
 
         SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
 
