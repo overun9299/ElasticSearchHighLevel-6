@@ -17,6 +17,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
+import soap.config.ESRequestConfig;
 
 import java.io.IOException;
 import java.text.ParseException;
@@ -42,6 +43,9 @@ public class TestSearch {
 
     @Autowired
     RestClient restClient;
+
+    @Autowired
+    ESRequestConfig esRequestConfig;
 
     /** DSL搜索 : DSL(Domain Specific Language)是ES提出的基于json的搜索方式，在搜索时传入特定的json格式的数据来完成不同的搜索需求。*/
     /** 查询指定索引库指定类型下的文档。（通过使用此方法） 发送：post http://localhost:9200/xc_course(索引名)/doc(文档类型创建时已确定)/_search */

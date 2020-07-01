@@ -1,0 +1,20 @@
+overun:
+  elasticsearch:
+    hostlist: 39.105.122.65:9200 #多个结点中间用逗号分隔
+  course:
+    index: xc_course
+    type: doc
+    source_field: id,name,grade,mt,st,charge,valid,pic,qq,price,price_old,status,studymodel,teachmode,expires,pub_time,start_time,end_time
+
+
+spring:
+  datasource:
+    # 基本属性
+    name: dev
+    url: jdbc:mysql://39.105.122.65:3306/micro_service_user?autoReconnect=true&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&useSSL=false
+    username: root
+    password: 263385aA+
+
+es:
+  indices: xc_course
+  types: doc
